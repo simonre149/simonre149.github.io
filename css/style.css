@@ -1,0 +1,47 @@
+@font-face {
+    font-family: customFont;
+    src: url("../fonts/LouisGeorgeCafeLight.ttf");
+  }
+
+.grid-container {
+display: grid;
+grid-template-columns: 1fr 0.5fr 0.5fr;
+grid-template-rows: 0.2fr 1fr;
+gap: 0px 0px;
+grid-template-areas:
+    "name_desc . links"
+    ". . .";
+}
+
+.name_desc { grid-area: name_desc; }
+
+.links { grid-area: links; }
+
+
+body
+{
+    font-family: customFont;
+    background-color: rgb(232, 253, 255);
+}
+
+a
+{
+    text-decoration: none;
+    color: black;
+}
+
+h1.name
+{
+    margin-top: 1%;
+    font-size: 4em;
+    margin-left: 3%;
+    color: rgb(0, 82, 75)
+}
+
+h2.description
+{
+    font-size: 1.5em;
+    margin-top: -6%;
+    margin-left: 6%;
+    color: rgb(0, 167, 173)
+}
